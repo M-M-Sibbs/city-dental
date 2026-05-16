@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery – City Dental | Modern Dental Care</title>
+  <meta name="description" content="See our clinic, smile transformations, and patient results in the City Dental photo gallery.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .gallery-item-inner { cursor: pointer; }
+    .gallery-placeholder-emoji { font-size: 48px; opacity: 0.25; }
+    .gallery-caption {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      background: linear-gradient(transparent, rgba(9,93,117,0.8));
+      padding: 20px 16px 16px;
+      color: white;
+      font-family: var(--font-heading);
+      font-size: 13px;
+      font-weight: 600;
+      transform: translateY(100%);
+      transition: transform 0.3s;
+    }
+    .gallery-item:hover .gallery-caption { transform: translateY(0); }
+  </style>
+</head>
+<body>
+
+<nav id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.jpg" alt="City Dental Logo">
+        <div class="nav-logo-text"><span class="brand-name">City Dental</span><span class="brand-tagline">Modern Dental Care</span></div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li><li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="testimonials.html">Reviews</a></li><li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#" onclick="openWhatsApp()" class="nav-icon-btn"><i class="fab fa-whatsapp"></i></a>
+        <a href="#" onclick="callNow()" class="nav-icon-btn"><i class="fas fa-phone"></i></a>
+        <a href="booking.html" class="btn btn-primary"><i class="fas fa-calendar-check"></i> Book Now</a>
+      </div>
+      <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-close" id="mobileClose"><i class="fas fa-times"></i></div>
+  <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a>
+  <a href="gallery.html">Gallery</a><a href="testimonials.html">Reviews</a><a href="contact.html">Contact</a>
+</div>
+
+<section class="page-hero">
+  <div class="container page-hero-content">
+    <div class="breadcrumb"><a href="index.html">Home</a> <i class="fas fa-chevron-right"></i> Gallery</div>
+    <h1>Our <em>Gallery</em></h1>
+    <p>Explore our modern clinic, smile transformations, and state-of-the-art dental technology.</p>
+  </div>
+</section>
+
+<section class="section-pad">
+  <div class="container">
+    <div class="gallery-filters">
+      <button class="gallery-filter-btn active">All</button>
+      <button class="gallery-filter-btn">Clinic</button>
+      <button class="gallery-filter-btn">Smile Transformations</button>
+      <button class="gallery-filter-btn">Technology</button>
+      <button class="gallery-filter-btn">Team</button>
+    </div>
+
+    <div class="gallery-masonry">
+      <!-- ROW 1 -->
+      <div class="gallery-item fade-up">
+        <div class="gallery-item-inner" style="background:linear-gradient(135deg,#D9F2EF,#A9D9D0);aspect-ratio:4/3">
+          <span class="gallery-placeholder-emoji">🏥</span>
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+          <div class="gallery-caption">Modern Reception Area</div>
+        </div>
+      </div>
+      <div class="gallery-item fade-up fade-up-delay-1">
+        <div class="gallery-item-inner" style="background:linear-gradient(135deg,#E8F6F3,#C5EDE8);aspect-ratio:4/5">
+          <span class="gallery-placeholder-emoji">😁</span>
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+          <div class="gallery-caption">Smile Transformation – Veneers</div>
+        </div>
+      </div>
+      <div class="gallery-item fade-up fade-up-delay-2">
+        <div class="gallery-item-inner" style="background:linear-gradient(135deg,#0E6E8C22,#A9D9D055);aspect-ratio:16/9">
+          <span class="gallery-placeholder-emoji">🔬</span>
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+          <div class="gallery-caption">3D Imaging Suite</div>
+        </div>
+      </div>
+      <!-- ROW 2 -->
+      <div class="gallery-item fade-up">
+        <div class="gallery-item-inner" style="background:linear-gradient(135deg,#F0FAFA,#D9F2EF);aspect-ratio:4/5">
+          <span class="gallery-placeholder-emoji">✨</span>
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+          <div class="gallery-caption">Teeth Whitening Result</div>
+        </div>
+      </div>
+      <div class="gallery-item fade-up fade-up-delay-1">
+        <div class="gallery-item-inner" style="background:linear-gradient(135deg,#095D7522,#0E6E8C33);aspect-ratio:4/3">
+          <span class="gallery-placeholder-emoji">🦷</span>
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+          <div class="gallery-caption">Treatment Room</div>
+        </div>
+      </div>
+      <div class="gallery-item fade-up fade-up-delay-2">
+        <div class="gallery-item-inner" style="background:linear-gradient(135deg,#A9D9D044,#D9F2EF);aspect-ratio:4/3">
+          <span class="gallery-placeholder-emoji">👑</span>
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+          <div class="gallery-caption">Crown & Implant Cases</div>
+        </div>
+      </div>
+      <!-- ROW 3 -->
+      <div class="gallery-item fade-up">
+        <div class="gallery-item-inner" style="background:linear-gradient(135deg,#E0F5F2,#B8E8E2);aspect-ratio:16/9">
+          <span class="gallery-placeholder-emoji">👨‍⚕️</span>
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+          <div class="gallery-caption">Our Expert Team</div>
+        </div>
+      </div>
+      <div class="gallery-item fade-up fade-up-delay-1">
+        <div class="gallery-item-inner" style="background:linear-gradient(135deg,#D9F2EF,#0E6E8C22);aspect-ratio:4/5">
+          <span class="gallery-placeholder-emoji">💎</span>
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+          <div class="gallery-caption">Porcelain Veneer Transformation</div>
+        </div>
+      </div>
+      <div class="gallery-item fade-up fade-up-delay-2">
+        <div class="gallery-item-inner" style="background:linear-gradient(135deg,#F5F9FA,#DDE7EA);aspect-ratio:4/3">
+          <span class="gallery-placeholder-emoji">⚡</span>
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+          <div class="gallery-caption">Laser Dentistry Equipment</div>
+        </div>
+      </div>
+      <!-- ROW 4 -->
+      <div class="gallery-item fade-up">
+        <div class="gallery-item-inner" style="background:linear-gradient(135deg,#C5EDE8,#95CEC7);aspect-ratio:4/3">
+          <span class="gallery-placeholder-emoji">😊</span>
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+          <div class="gallery-caption">Happy Patient Results</div>
+        </div>
+      </div>
+      <div class="gallery-item fade-up fade-up-delay-1">
+        <div class="gallery-item-inner" style="background:linear-gradient(135deg,#EDF7F6,#D9F2EF);aspect-ratio:4/5">
+          <span class="gallery-placeholder-emoji">🏆</span>
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+          <div class="gallery-caption">Award-Winning Practice</div>
+        </div>
+      </div>
+      <div class="gallery-item fade-up fade-up-delay-2">
+        <div class="gallery-item-inner" style="background:linear-gradient(135deg,#0E6E8C15,#A9D9D040);aspect-ratio:4/3">
+          <span class="gallery-placeholder-emoji">🛋️</span>
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+          <div class="gallery-caption">Comfortable Waiting Area</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center" style="margin-top:60px">
+      <p style="color:#6A8090;margin-bottom:24px">Want to see your smile transformation in here?</p>
+      <a href="booking.html" class="btn btn-primary btn-lg"><i class="fas fa-calendar-check"></i> Book Your Consultation</a>
+    </div>
+  </div>
+</section>
+
+<section class="section-pad booking-cta">
+  <div class="container">
+    <div class="booking-cta-inner">
+      <div><h2>Your smile could be<br><strong>our next showcase.</strong></h2><p>Book a consultation and start your smile journey with City Dental's expert team.</p></div>
+      <div class="booking-cta-actions">
+        <a href="booking.html" class="btn btn-white btn-lg"><i class="fas fa-calendar-check"></i> Book Now</a>
+        <button onclick="openWhatsApp()" class="btn btn-whatsapp btn-lg"><i class="fab fa-whatsapp"></i> WhatsApp Us</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><div class="footer-logo"><img src="images/logo.jpg" alt="City Dental"><div><div class="brand-name">City Dental</div><div class="brand-tagline">Modern Dental Care</div></div></div><p class="footer-desc">Premium dental care in a warm, modern environment.</p><div class="footer-socials"><a href="#" class="footer-social"><i class="fab fa-facebook-f"></i></a><a href="#" class="footer-social"><i class="fab fa-instagram"></i></a><a href="#" class="footer-social"><i class="fab fa-whatsapp"></i></a></div></div>
+      <div class="footer-col"><h4>Quick Links</h4><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="booking.html">Book Now</a></li></ul></div>
+      <div class="footer-col"><h4>Services</h4><ul class="footer-links"><li><a href="services/whitening.html">Teeth Whitening</a></li><li><a href="services/veneers.html">Veneers</a></li><li><a href="services/implants.html">Implants</a></li><li><a href="services/invisalign.html">Invisalign</a></li></ul></div>
+      <div class="footer-col"><h4>Contact</h4><div class="footer-contact-items"><div class="footer-contact-item"><i class="fas fa-phone"></i><a href="tel:+263771234567" style="color:inherit">+263 77 123 4567</a></div><div class="footer-contact-item"><i class="fas fa-envelope"></i><span>hello@citydental.co.zw</span></div></div></div>
+    </div>
+  </div>
+  <div class="footer-bottom"><div class="container" style="width:100%;display:flex;align-items:center;justify-content:space-between"><span>© 2025 City Dental. All rights reserved.</span></div></div>
+</footer>
+<div class="floating-actions">
+  <button onclick="openWhatsApp()" class="float-btn float-wa"><i class="fab fa-whatsapp"></i><span class="float-label">Chat on WhatsApp</span></button>
+  <button onclick="callNow()" class="float-btn float-call"><i class="fas fa-phone-alt"></i><span class="float-label">Call Now</span></button>
+  <a href="booking.html" class="float-btn float-book"><i class="fas fa-calendar-check"></i><span class="float-label">Book Now</span></a>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>
