@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # City Dental — Next.js website
 
 Modern, SEO-optimised website for City Dental (Harare, Zimbabwe), rebuilt from the
@@ -65,3 +66,7 @@ Almost all copy lives in plain data files under `src/lib/`:
 - `testimonials.ts` — patient reviews.
 
 Change a value there and it updates everywhere it appears.
+=======
+# city-dental
+dental project
+>>>>>>> 61c19146d79641557cbce83d107049c85bf74a02

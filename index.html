@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>City Dental – Modern Dental Care | Book Your Appointment</title>
+  <meta name="description" content="City Dental offers modern, premium dental care including cosmetic dentistry, implants, whitening, and more. Book your appointment today.">
+  <meta name="keywords" content="dental clinic, dentist, teeth whitening, dental implants, cosmetic dentistry, City Dental">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- ========== NAVBAR ========== -->
+<nav id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.jpg" alt="City Dental Logo">
+        <div class="nav-logo-text">
+          <span class="brand-name">City Dental</span>
+          <span class="brand-tagline">Modern Dental Care</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="testimonials.html">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#" onclick="openWhatsApp()" class="nav-icon-btn" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="#" onclick="callNow()" class="nav-icon-btn" title="Call Now"><i class="fas fa-phone"></i></a>
+        <a href="booking.html" class="btn btn-primary"><i class="fas fa-calendar-check"></i> Book Now</a>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-close" id="mobileClose"><i class="fas fa-times"></i></div>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="testimonials.html">Reviews</a>
+  <a href="contact.html">Contact</a>
+  <a href="booking.html" class="btn btn-primary btn-lg" style="margin-top:16px">Book Appointment</a>
+</div>
+
+<!-- ========== HERO ========== -->
+<section class="hero">
+  <div class="hero-bg">
+    <div class="hero-bg-shape"></div>
+    <div class="hero-bg-shape"></div>
+    <div class="hero-bg-shape"></div>
+    <div class="hero-grid"></div>
+  </div>
+  <div class="container hero-content">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <div class="hero-tag"><i class="fas fa-star"></i> #1 Rated Dental Clinic in the City</div>
+        <h1 class="hero-headline">Modern Dental Care<br><em>Designed Around</em></h1>
+        <span class="hero-headline-bold">Your Perfect Smile</span>
+        <p class="hero-desc">Experience world-class dentistry in a calm, modern environment. From routine care to full smile transformations — we're with you every step of the way.</p>
+        <div class="hero-actions">
+          <a href="booking.html" class="btn btn-white btn-lg"><i class="fas fa-calendar-check"></i> Book Appointment</a>
+          <button onclick="openWhatsApp()" class="btn btn-whatsapp btn-lg"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</button>
+          <button onclick="callNow()" class="btn btn-outline btn-lg" style="border-color:rgba(255,255,255,0.4);color:#fff"><i class="fas fa-phone"></i> Call Now</button>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <span class="hero-stat-num" data-count="5000" data-suffix="+">0+</span>
+            <span class="hero-stat-label">Happy Patients</span>
+          </div>
+          <div>
+            <span class="hero-stat-num" data-count="12" data-suffix="+">0+</span>
+            <span class="hero-stat-label">Years Experience</span>
+          </div>
+          <div>
+            <span class="hero-stat-num" data-count="98" data-suffix="%">0%</span>
+            <span class="hero-stat-label">Satisfaction Rate</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-card-wrap">
+        <div class="hero-image-card">
+          <div class="hero-dental-visual">
+            <i class="fas fa-tooth hero-tooth-icon"></i>
+            <div style="text-align:center;position:relative;z-index:2;color:white">
+              <div style="font-size:80px;margin-bottom:12px">😊</div>
+              <div style="font-family:var(--font-heading);font-size:18px;font-weight:700;opacity:0.9">Your Smile Transformation</div>
+              <div style="font-size:13px;opacity:0.65;margin-top:6px">Starts Here</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card" style="position:relative">
+          <div class="badge-float"><i class="fas fa-star"></i> 5.0 Google Rating</div>
+          <div class="booking-card-title"><i class="fas fa-bolt"></i> Quick Book</div>
+          <div class="booking-actions">
+            <a href="booking.html" class="booking-action-btn">
+              <i class="fas fa-calendar-alt"></i> Schedule Online
+            </a>
+            <button onclick="openWhatsApp()" class="booking-action-btn wa">
+              <i class="fab fa-whatsapp"></i> Book via WhatsApp
+            </button>
+            <button onclick="callNow()" class="booking-action-btn call">
+              <i class="fas fa-phone-alt"></i> Call Reception
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== TRUST STRIP ========== -->
+<div class="trust-strip">
+  <div class="container">
+    <div class="trust-items">
+      <div class="trust-item"><i class="fas fa-shield-alt"></i> Safe & Sterile Environment</div>
+      <div class="trust-item"><i class="fas fa-clock"></i> Mon–Sat 8am–6pm</div>
+      <div class="trust-item"><i class="fas fa-bolt"></i> Same-Day Emergency Care</div>
+      <div class="trust-item"><i class="fas fa-credit-card"></i> Flexible Payment Plans</div>
+      <div class="trust-item"><i class="fas fa-microscope"></i> Latest Technology</div>
+    </div>
+  </div>
+</div>
+
+<!-- ========== SERVICES PREVIEW ========== -->
+<section class="section-pad">
+  <div class="container">
+    <div class="text-center">
+      <div class="tag-label">Our Services</div>
+      <h2 class="section-title">Everything Your Smile <span>Deserves</span></h2>
+      <p class="section-subtitle">From preventive care to complete smile makeovers, we offer comprehensive dental services using the latest technology.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card fade-up">
+        <div class="service-icon"><i class="fas fa-tooth"></i></div>
+        <h3>General Dentistry</h3>
+        <p>Routine check-ups, cleanings, fillings, and preventive care to keep your smile healthy year-round.</p>
+        <a href="services.html" class="service-link">Explore <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="service-card fade-up fade-up-delay-1">
+        <div class="service-icon"><i class="fas fa-star"></i></div>
+        <h3>Cosmetic Dentistry</h3>
+        <p>Teeth whitening, veneers, smile design, and Invisalign to help you achieve your dream smile.</p>
+        <a href="services.html" class="service-link">Explore <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="service-card fade-up fade-up-delay-2">
+        <div class="service-icon"><i class="fas fa-magic"></i></div>
+        <h3>Restorative Care</h3>
+        <p>Crowns, bridges, and dental implants that look and feel completely natural.</p>
+        <a href="services.html" class="service-link">Explore <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="service-card fade-up fade-up-delay-3">
+        <div class="service-icon"><i class="fas fa-ambulance"></i></div>
+        <h3>Emergency Dentistry</h3>
+        <p>Same-day emergency appointments for toothaches, broken teeth, and urgent dental needs.</p>
+        <a href="booking.html" class="service-link">Book Now <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+    <div class="text-center" style="margin-top:40px">
+      <a href="services.html" class="btn btn-outline btn-lg">View All Services <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== WHY CHOOSE US ========== -->
+<section class="section-pad why-us">
+  <div class="container">
+    <div class="why-inner">
+      <div class="why-visual">
+        <div class="why-big-card">
+          <span class="why-big-num" data-count="12" data-suffix="+">12+</span>
+          <div class="why-big-label">Years of Excellence</div>
+          <p class="why-big-desc">Serving the city with compassionate, cutting-edge dental care that puts patients first, every single visit.</p>
+        </div>
+        <div class="why-small-cards">
+          <div class="why-small-card fade-up">
+            <i class="fas fa-award"></i>
+            <strong>Award Winning</strong>
+            <span>Best Dental Clinic 2024</span>
+          </div>
+          <div class="why-small-card fade-up fade-up-delay-1">
+            <i class="fas fa-users"></i>
+            <strong>5,000+ Patients</strong>
+            <span>Smiles Transformed</span>
+          </div>
+          <div class="why-small-card fade-up fade-up-delay-2">
+            <i class="fas fa-heartbeat"></i>
+            <strong>Pain-Free</strong>
+            <span>Gentle Techniques</span>
+          </div>
+          <div class="why-small-card fade-up fade-up-delay-3">
+            <i class="fas fa-lock"></i>
+            <strong>Safe & Sterile</strong>
+            <span>Hospital Standards</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="tag-label">Why City Dental</div>
+        <h2 class="section-title">Dental Care That <span>Puts You First</span></h2>
+        <p class="section-subtitle" style="margin-bottom:32px">We combine advanced technology with a warm, patient-centred approach. Your comfort and confidence are our top priorities.</p>
+        <div class="why-features">
+          <div class="why-feature fade-up">
+            <div class="why-feature-icon"><i class="fas fa-microscope"></i></div>
+            <div class="why-feature-text">
+              <h4>State-of-the-Art Technology</h4>
+              <p>Digital X-rays, 3D imaging, and laser dentistry for precise, comfortable treatments.</p>
+            </div>
+          </div>
+          <div class="why-feature fade-up fade-up-delay-1">
+            <div class="why-feature-icon"><i class="fas fa-user-md"></i></div>
+            <div class="why-feature-text">
+              <h4>Expert Dental Team</h4>
+              <p>Our highly trained dentists bring years of experience and continued education to every case.</p>
+            </div>
+          </div>
+          <div class="why-feature fade-up fade-up-delay-2">
+            <div class="why-feature-icon"><i class="fas fa-smile"></i></div>
+            <div class="why-feature-text">
+              <h4>Comfortable Experience</h4>
+              <p>From soothing interiors to gentle techniques, we make every visit relaxing and anxiety-free.</p>
+            </div>
+          </div>
+          <div class="why-feature fade-up fade-up-delay-3">
+            <div class="why-feature-icon"><i class="fas fa-calendar-check"></i></div>
+            <div class="why-feature-text">
+              <h4>Easy Online Booking</h4>
+              <p>Book in seconds online, via WhatsApp, or by phone. Flexible hours to suit your schedule.</p>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top:36px">
+          <a href="about.html" class="btn btn-primary btn-lg"><i class="fas fa-info-circle"></i> Learn More About Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== TECHNOLOGY ========== -->
+<section class="section-pad">
+  <div class="container">
+    <div class="text-center">
+      <div class="tag-label">Our Technology</div>
+      <h2 class="section-title">Powered by <span>Modern Dentistry</span></h2>
+      <p class="section-subtitle">We invest in the latest dental technology so you receive accurate diagnoses, comfortable treatments, and lasting results.</p>
+    </div>
+    <div class="tech-cards">
+      <div class="tech-card fade-up">
+        <div class="tech-card-icon"><i class="fas fa-x-ray"></i></div>
+        <h3>Digital X-Rays</h3>
+        <p>90% less radiation than traditional X-rays with instant, high-resolution imaging for accurate diagnosis.</p>
+      </div>
+      <div class="tech-card fade-up fade-up-delay-1">
+        <div class="tech-card-icon"><i class="fas fa-cube"></i></div>
+        <h3>3D Cone Beam CT</h3>
+        <p>Full 3D imaging for implant planning and complex procedures with unmatched precision.</p>
+      </div>
+      <div class="tech-card fade-up fade-up-delay-2">
+        <div class="tech-card-icon"><i class="fas fa-bolt"></i></div>
+        <h3>Laser Dentistry</h3>
+        <p>Minimally invasive treatments with lasers for faster healing and reduced discomfort.</p>
+      </div>
+      <div class="tech-card fade-up">
+        <div class="tech-card-icon"><i class="fas fa-teeth"></i></div>
+        <h3>Intraoral Camera</h3>
+        <p>See exactly what we see with HD intraoral cameras — full transparency in your care.</p>
+      </div>
+      <div class="tech-card fade-up fade-up-delay-1">
+        <div class="tech-card-icon"><i class="fas fa-magic"></i></div>
+        <h3>Smile Simulation</h3>
+        <p>Preview your new smile digitally before any treatment begins with our smile design software.</p>
+      </div>
+      <div class="tech-card fade-up fade-up-delay-2">
+        <div class="tech-card-icon"><i class="fas fa-shield-virus"></i></div>
+        <h3>Sterilisation Suite</h3>
+        <p>Hospital-grade sterilisation protocols to ensure the safest, cleanest environment possible.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== TESTIMONIALS ========== -->
+<section class="section-pad testimonials">
+  <div class="container">
+    <div class="text-center">
+      <div class="tag-label">Patient Reviews</div>
+      <h2 class="section-title">What Our <span>Patients Say</span></h2>
+      <p class="section-subtitle">Over 500 five-star reviews and counting. Don't just take our word for it.</p>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card fade-up">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"I was terrified of dentists until I found City Dental. The team made me feel so comfortable. My smile transformation has completely changed my confidence."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">TM</div>
+          <div>
+            <span class="testi-name">Tatenda Moyo</span>
+            <span class="testi-role">Smile Makeover Patient</span>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card fade-up fade-up-delay-1">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Booked through WhatsApp on a Sunday evening and had my appointment the next morning. Professional, modern, and completely pain-free. Highly recommend!"</p>
+        <div class="testi-author">
+          <div class="testi-avatar">CM</div>
+          <div>
+            <span class="testi-name">Chiedza Mhuri</span>
+            <span class="testi-role">Implant Patient</span>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card fade-up fade-up-delay-2">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"The digital X-rays and 3D imaging really impressed me. You can tell they've invested in proper equipment. Got my veneers done and the results are stunning."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">RN</div>
+          <div>
+            <span class="testi-name">Rumbidzai Nhapi</span>
+            <span class="testi-role">Veneers Patient</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center" style="margin-top:48px">
+      <a href="testimonials.html" class="btn btn-white btn-lg">Read All Reviews <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== TEAM ========== -->
+<section class="section-pad bg-light">
+  <div class="container">
+    <div class="text-center">
+      <div class="tag-label">Our Dentists</div>
+      <h2 class="section-title">Meet the <span>Expert Team</span></h2>
+      <p class="section-subtitle">Our experienced dentists are dedicated to providing exceptional care with the latest techniques.</p>
+    </div>
+    <div class="team-grid">
+      <div class="team-card fade-up">
+        <div class="team-photo">
+          <div class="team-photo-inner"><i class="fas fa-user-md" style="font-size:70px;color:var(--primary)"></i></div>
+        </div>
+        <h3>Dr. Farai Mutanga</h3>
+        <div class="role">Lead Dentist & Director</div>
+        <p>BDS, MSc Cosmetic Dentistry. 15 years experience specialising in smile makeovers and complex restorations.</p>
+      </div>
+      <div class="team-card fade-up fade-up-delay-1">
+        <div class="team-photo">
+          <div class="team-photo-inner"><i class="fas fa-user-md" style="font-size:70px;color:var(--primary)"></i></div>
+        </div>
+        <h3>Dr. Nyasha Chirwa</h3>
+        <div class="role">Cosmetic Dentist</div>
+        <p>BDS, Diploma in Aesthetic Dentistry. Specialist in Invisalign, veneers, and teeth whitening treatments.</p>
+      </div>
+      <div class="team-card fade-up fade-up-delay-2">
+        <div class="team-photo">
+          <div class="team-photo-inner"><i class="fas fa-user-md" style="font-size:70px;color:var(--primary)"></i></div>
+        </div>
+        <h3>Dr. Simba Dube</h3>
+        <div class="role">Implant Specialist</div>
+        <p>BDS, MSc Oral Implantology. Expert in dental implants and full-mouth rehabilitation procedures.</p>
+      </div>
+    </div>
+    <div class="text-center" style="margin-top:48px">
+      <a href="about.html" class="btn btn-primary btn-lg"><i class="fas fa-users"></i> Meet the Full Team</a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== INSURANCE ========== -->
+<section class="section-pad-sm">
+  <div class="container">
+    <div class="text-center">
+      <div class="tag-label">Insurance & Partners</div>
+      <h2 class="section-title" style="font-size:1.8rem">We Work With Major <span>Insurance Providers</span></h2>
+    </div>
+    <div class="insurance-logos">
+      <div class="insurance-logo-item">CIMAS</div>
+      <div class="insurance-logo-item">PSMAS</div>
+      <div class="insurance-logo-item">First Mutual</div>
+      <div class="insurance-logo-item">Nicoz Diamond</div>
+      <div class="insurance-logo-item">ZB Life</div>
+      <div class="insurance-logo-item">Alliance Life</div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FAQ ========== -->
+<section class="section-pad bg-light">
+  <div class="container">
+    <div class="text-center">
+      <div class="tag-label">FAQs</div>
+      <h2 class="section-title">Frequently Asked <span>Questions</span></h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-question">How do I book an appointment? <i class="fas fa-plus"></i></div>
+        <div class="faq-answer"><div class="faq-answer-inner">You can book online through our website, send us a WhatsApp message, or call our reception directly. We offer same-day appointments for emergencies.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Do you accept walk-in patients? <i class="fas fa-plus"></i></div>
+        <div class="faq-answer"><div class="faq-answer-inner">Yes, we accept walk-ins subject to availability. However, booking in advance is recommended to secure your preferred time slot.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Is teeth whitening painful? <i class="fas fa-plus"></i></div>
+        <div class="faq-answer"><div class="faq-answer-inner">Our professional teeth whitening is safe and comfortable. Some patients experience mild sensitivity during or after the procedure, but this is temporary and subsides quickly.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">How long does a dental implant procedure take? <i class="fas fa-plus"></i></div>
+        <div class="faq-answer"><div class="faq-answer-inner">The implant placement itself takes about 1–2 hours. The full process, including healing and crown placement, typically takes 3–6 months for the best results.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Do you offer payment plans? <i class="fas fa-plus"></i></div>
+        <div class="faq-answer"><div class="faq-answer-inner">Yes! We offer flexible payment plans for major treatments. We also accept all major medical aids and insurance providers. Ask our reception team for details.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">What should I do in a dental emergency? <i class="fas fa-plus"></i></div>
+        <div class="faq-answer"><div class="faq-answer-inner">Call us immediately or WhatsApp us. We reserve slots for dental emergencies every day and aim to see you within the same day. For severe emergencies after hours, go to your nearest hospital.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== BOOKING CTA ========== -->
+<section class="section-pad booking-cta">
+  <div class="container">
+    <div class="booking-cta-inner">
+      <div>
+        <h2>Ready for Your<br><strong>Perfect Smile?</strong></h2>
+        <p>Book your consultation today and take the first step towards the smile you deserve. New patients welcome.</p>
+      </div>
+      <div class="booking-cta-actions">
+        <a href="booking.html" class="btn btn-white btn-lg"><i class="fas fa-calendar-check"></i> Book Appointment</a>
+        <button onclick="openWhatsApp()" class="btn btn-whatsapp btn-lg"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</button>
+        <button onclick="callNow()" class="btn btn-outline btn-lg" style="border-color:rgba(255,255,255,0.4);color:#fff"><i class="fas fa-phone"></i> +263 77 123 4567</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="images/logo.jpg" alt="City Dental">
+          <div>
+            <div class="brand-name">City Dental</div>
+            <div class="brand-tagline">Modern Dental Care</div>
+          </div>
+        </div>
+        <p class="footer-desc">Premium dental care in a warm, modern environment. Your smile is our passion — from your first visit to your last check-up.</p>
+        <div class="footer-socials">
+          <a href="#" class="footer-social"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="footer-social"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="footer-social"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" class="footer-social"><i class="fab fa-google"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Our Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="testimonials.html">Reviews</a></li>
+          <li><a href="booking.html">Book Appointment</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="services/whitening.html">Teeth Whitening</a></li>
+          <li><a href="services/veneers.html">Veneers</a></li>
+          <li><a href="services/implants.html">Dental Implants</a></li>
+          <li><a href="services/invisalign.html">Invisalign</a></li>
+          <li><a href="services.html">General Dentistry</a></li>
+          <li><a href="booking.html">Emergency Care</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact & Hours</h4>
+        <div class="footer-contact-items">
+          <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>123 Samora Machel Ave, Harare, Zimbabwe</span></div>
+          <div class="footer-contact-item"><i class="fas fa-phone"></i><a href="tel:+263771234567" style="color:inherit">+263 77 123 4567</a></div>
+          <div class="footer-contact-item"><i class="fas fa-envelope"></i><a href="mailto:hello@citydental.co.zw" style="color:inherit">hello@citydental.co.zw</a></div>
+        </div>
+        <div class="footer-hours" style="margin-top:20px">
+          <div class="footer-hour"><span>Mon – Fri</span><span>8:00 – 18:00</span></div>
+          <div class="footer-hour"><span>Saturday</span><span>8:00 – 14:00</span></div>
+          <div class="footer-hour"><span>Sunday</span><span>Emergencies Only</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container" style="width:100%;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px">
+      <span>© 2025 City Dental. All rights reserved.</span>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ========== FLOATING BUTTONS ========== -->
+<div class="floating-actions">
+  <button onclick="openWhatsApp()" class="float-btn float-wa"><i class="fab fa-whatsapp"></i><span class="float-label">Chat on WhatsApp</span></button>
+  <button onclick="callNow()" class="float-btn float-call"><i class="fas fa-phone-alt"></i><span class="float-label">Call Now</span></button>
+  <a href="booking.html" class="float-btn float-book"><i class="fas fa-calendar-check"></i><span class="float-label">Book Appointment</span></a>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

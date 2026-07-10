@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Appointment – City Dental | Modern Dental Care</title>
+  <meta name="description" content="Book your dental appointment online at City Dental. Easy scheduling for all dental services.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<nav id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.jpg" alt="City Dental Logo">
+        <div class="nav-logo-text"><span class="brand-name">City Dental</span><span class="brand-tagline">Modern Dental Care</span></div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li><li><a href="gallery.html">Gallery</a></li>
+        <li><a href="testimonials.html">Reviews</a></li><li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#" onclick="openWhatsApp()" class="nav-icon-btn"><i class="fab fa-whatsapp"></i></a>
+        <a href="#" onclick="callNow()" class="nav-icon-btn"><i class="fas fa-phone"></i></a>
+        <a href="booking.html" class="btn btn-primary"><i class="fas fa-calendar-check"></i> Book Now</a>
+      </div>
+      <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-close" id="mobileClose"><i class="fas fa-times"></i></div>
+  <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a>
+  <a href="gallery.html">Gallery</a><a href="testimonials.html">Reviews</a><a href="contact.html">Contact</a>
+</div>
+
+<section class="page-hero">
+  <div class="container page-hero-content">
+    <div class="breadcrumb"><a href="index.html">Home</a> <i class="fas fa-chevron-right"></i> Book Appointment</div>
+    <h1>Book Your <em>Appointment</em></h1>
+    <p>Schedule your visit online in minutes. Same-day slots available for emergencies.</p>
+  </div>
+</section>
+
+<section class="section-pad">
+  <div class="container">
+    <div class="booking-layout">
+
+      <div class="booking-form-card fade-up">
+        <div class="tag-label" style="margin-bottom:24px"><i class="fas fa-calendar-alt"></i> Schedule Online</div>
+        <h2 style="font-size:1.6rem;font-weight:700;margin-bottom:28px">Fill in Your Details</h2>
+
+        <form id="bookingForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">Full Name *</label>
+              <input type="text" id="fname" placeholder="Your full name" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" placeholder="+263 77 000 0000" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="your@email.com">
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="date">Preferred Date *</label>
+              <input type="date" id="date" required>
+            </div>
+            <div class="form-group">
+              <label for="time">Preferred Time *</label>
+              <select id="time" required>
+                <option value="">Select time</option>
+                <option>08:00 AM</option>
+                <option>09:00 AM</option>
+                <option>10:00 AM</option>
+                <option>11:00 AM</option>
+                <option>12:00 PM</option>
+                <option>01:00 PM</option>
+                <option>02:00 PM</option>
+                <option>03:00 PM</option>
+                <option>04:00 PM</option>
+                <option>05:00 PM</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="service">Service Needed *</label>
+            <select id="service" required>
+              <option value="">Select a service</option>
+              <optgroup label="General Dentistry">
+                <option>Cleaning & Exam</option>
+                <option>Filling</option>
+                <option>Tooth Extraction</option>
+                <option>Root Canal</option>
+              </optgroup>
+              <optgroup label="Cosmetic Dentistry">
+                <option>Teeth Whitening</option>
+                <option>Veneers</option>
+                <option>Smile Design Consultation</option>
+                <option>Invisalign Consultation</option>
+              </optgroup>
+              <optgroup label="Restorative">
+                <option>Dental Crown</option>
+                <option>Dental Bridge</option>
+                <option>Dental Implant Consultation</option>
+                <option>Dentures</option>
+              </optgroup>
+              <option>Emergency Appointment</option>
+              <option>General Consultation</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="dentist">Preferred Dentist</label>
+            <select id="dentist">
+              <option value="">No preference</option>
+              <option>Dr. Farai Mutanga</option>
+              <option>Dr. Nyasha Chirwa</option>
+              <option>Dr. Simba Dube</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="notes">Additional Notes</label>
+            <textarea id="notes" placeholder="Any concerns, allergies, or information we should know..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center">
+            <i class="fas fa-calendar-check"></i> Confirm Appointment
+          </button>
+          <div id="successMsg" class="success-msg">
+            <i class="fas fa-check-circle" style="font-size:20px;margin-right:8px"></i>
+            Appointment request sent! We'll confirm within 2 hours during business hours.
+          </div>
+        </form>
+      </div>
+
+      <div class="booking-sidebar">
+        <div class="booking-info-card fade-up">
+          <h3><i class="fas fa-info-circle" style="margin-right:8px;color:var(--soft-mint)"></i> Clinic Information</h3>
+          <div class="booking-info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div><strong>Our Address</strong>123 Samora Machel Ave, Harare, Zimbabwe</div>
+          </div>
+          <div class="booking-info-item">
+            <i class="fas fa-clock"></i>
+            <div>
+              <strong>Opening Hours</strong>
+              Mon – Fri: 8:00 AM – 6:00 PM<br>
+              Saturday: 8:00 AM – 2:00 PM<br>
+              <span style="color:rgba(255,255,255,0.5);font-size:13px">Sunday: Emergencies Only</span>
+            </div>
+          </div>
+          <div class="booking-info-item">
+            <i class="fas fa-phone-alt"></i>
+            <div><strong>Call Us</strong><a href="tel:+263771234567" style="color:rgba(255,255,255,0.75)">+263 77 123 4567</a></div>
+          </div>
+          <div class="booking-info-item">
+            <i class="fas fa-credit-card"></i>
+            <div><strong>Payment</strong>Cash, card, mobile money & medical aid accepted</div>
+          </div>
+        </div>
+
+        <div class="wa-booking-card fade-up">
+          <i class="fab fa-whatsapp"></i>
+          <h4>Book via WhatsApp</h4>
+          <p>Prefer to message us? Send a WhatsApp and we'll get back to you within minutes.</p>
+          <button onclick="openWhatsApp('Hello City Dental, I would like to book an appointment. Please let me know your available slots.')" class="btn btn-whatsapp btn-lg" style="width:100%;justify-content:center">
+            <i class="fab fa-whatsapp"></i> Open WhatsApp
+          </button>
+        </div>
+
+        <div style="background:var(--light-aqua);border-radius:var(--radius);padding:24px;margin-top:20px;border:1px solid var(--soft-mint)">
+          <h4 style="font-size:15px;font-weight:700;color:var(--deep-teal);margin-bottom:12px"><i class="fas fa-bolt" style="margin-right:8px"></i> Emergency? Call Now</h4>
+          <p style="font-size:13px;color:#4A6274;margin-bottom:16px">For dental emergencies, don't wait — call us and we'll fit you in the same day.</p>
+          <button onclick="callNow()" class="btn btn-primary" style="width:100%;justify-content:center">
+            <i class="fas fa-phone-alt"></i> Call +263 77 123 4567
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo"><img src="images/logo.jpg" alt="City Dental"><div><div class="brand-name">City Dental</div><div class="brand-tagline">Modern Dental Care</div></div></div>
+        <p class="footer-desc">Premium dental care in a warm, modern environment.</p>
+        <div class="footer-socials"><a href="#" class="footer-social"><i class="fab fa-facebook-f"></i></a><a href="#" class="footer-social"><i class="fab fa-instagram"></i></a><a href="#" class="footer-social"><i class="fab fa-whatsapp"></i></a></div>
+      </div>
+      <div class="footer-col"><h4>Quick Links</h4><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Services</h4><ul class="footer-links"><li><a href="services/whitening.html">Teeth Whitening</a></li><li><a href="services/veneers.html">Veneers</a></li><li><a href="services/implants.html">Implants</a></li><li><a href="services/invisalign.html">Invisalign</a></li></ul></div>
+      <div class="footer-col"><h4>Contact</h4><div class="footer-contact-items"><div class="footer-contact-item"><i class="fas fa-phone"></i><a href="tel:+263771234567" style="color:inherit">+263 77 123 4567</a></div><div class="footer-contact-item"><i class="fas fa-envelope"></i><span>hello@citydental.co.zw</span></div></div></div>
+    </div>
+  </div>
+  <div class="footer-bottom"><div class="container" style="width:100%;display:flex;align-items:center;justify-content:space-between"><span>© 2025 City Dental. All rights reserved.</span></div></div>
+</footer>
+
+<div class="floating-actions">
+  <button onclick="openWhatsApp()" class="float-btn float-wa"><i class="fab fa-whatsapp"></i><span class="float-label">Chat on WhatsApp</span></button>
+  <button onclick="callNow()" class="float-btn float-call"><i class="fas fa-phone-alt"></i><span class="float-label">Call Now</span></button>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>
