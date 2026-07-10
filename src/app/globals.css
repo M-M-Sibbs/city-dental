@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-body text-ink bg-white antialiased;
+    line-height: 1.7;
+  }
+  ::selection {
+    @apply bg-mint text-deep;
+  }
+  :focus-visible {
+    @apply outline-none ring-2 ring-primary ring-offset-2 rounded-md;
+  }
+}
+
+@layer components {
+  .container-site {
+    @apply mx-auto w-full max-w-6xl px-5 sm:px-8;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full font-heading font-semibold text-sm px-6 py-3 transition-all duration-300 select-none;
+  }
+  .btn-lg {
+    @apply px-8 py-4 text-base;
+  }
+  .btn-primary {
+    @apply btn bg-primary text-white shadow-soft hover:bg-deep hover:shadow-card hover:-translate-y-0.5;
+  }
+  .btn-white {
+    @apply btn bg-white text-deep shadow-card hover:-translate-y-0.5 hover:shadow-lift;
+  }
+  .btn-whatsapp {
+    @apply btn bg-[#25D366] text-white hover:bg-[#1eb958] hover:-translate-y-0.5 shadow-soft;
+  }
+  .btn-outline {
+    @apply btn border-2 border-primary text-primary hover:bg-primary hover:text-white;
+  }
+  .btn-outline-light {
+    @apply btn border-2 border-white/40 text-white hover:bg-white/10;
+  }
+  .tag-label {
+    @apply inline-flex items-center gap-2 rounded-full bg-aqua text-deep font-heading text-xs font-bold uppercase tracking-[0.14em] px-4 py-2;
+  }
+  .section-title {
+    @apply font-heading text-3xl sm:text-4xl font-bold text-ink leading-tight;
+  }
+  .section-title em,
+  .section-title span.accent {
+    @apply not-italic text-primary;
+  }
+  .section-subtitle {
+    @apply text-slate-500 max-w-2xl mx-auto mt-4;
+  }
+  .card {
+    @apply bg-white rounded-xl3 border border-line shadow-soft;
+  }
+  .input-field {
+    @apply w-full rounded-xl2 border border-line bg-surface px-4 py-3 text-sm text-ink placeholder:text-slate-400 focus:border-primary focus:bg-white focus:outline-none focus:ring-2 focus:ring-primary/20 transition;
+  }
+  .field-label {
+    @apply mb-1.5 block font-heading text-xs font-bold uppercase tracking-wider text-slate-600;
+  }
+}
+
+@layer utilities {
+  .fade-up {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .fade-up {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
