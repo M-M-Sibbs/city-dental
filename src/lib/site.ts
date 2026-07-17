@@ -3,12 +3,12 @@ export const site = {
   tagline: "Modern Dental Care",
   description:
     "City Dental offers modern, premium dental care in Harare, Zimbabwe — cosmetic dentistry, dental implants, teeth whitening, Invisalign, and same-day emergency care. Book your appointment online today.",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://citydental.co.zw",
-  phone: "+263714337786",
-  phoneDisplay: "+263 71 433 7786",
-  whatsapp: "263714337786",
-  email: "hello@citydental.co.zw",
-  bookingInbox: "butetemunyaradzi@gmail.com",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://citydental.site",
+  phone: "+263781728277",
+  phoneDisplay: "+263 78 172 8277",
+  whatsapp: "263781728277",
+  email: "ahmedcitydental@gmail.com",
+  bookingInbox: "ahmedcitydental@gmail.com",
   address: {
     street: "123 Samora Machel Avenue",
     city: "Harare",
@@ -42,7 +42,7 @@ export const site = {
 
 export const team = [
   {
-    name: "Dr. Farai Mutanga",
+    name: "Dr. Farai Butete M.M",
     role: "Lead Dentist & Director",
     bio: "BDS (UZ), MSc Cosmetic Dentistry (UK). 15 years of experience specialising in full smile makeovers, implants, and complex restorations.",
     initials: "FM",
