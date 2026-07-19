@@ -14,7 +14,7 @@ export const testimonials: Testimonial[] = [
     role: "Smile Makeover Patient",
     date: "March 2025",
     title: "Smile Makeover Changed My Life",
-    text: "I was terrified of dentists until I found City Dental. From the moment I walked in, the team made me feel so comfortable. Dr. Farai listened to exactly what I wanted and transformed my smile beyond my expectations. My confidence has completely changed. I can't stop smiling!",
+    text: "I was terrified of dentists until I found City Dental. From the moment I walked in, the team made me feel so comfortable. Dr. Butete listened to exactly what I wanted and transformed my smile beyond my expectations. My confidence has completely changed. I can't stop smiling!",
   },
   {
     name: "Chiedza Mhuri",
@@ -46,7 +46,7 @@ export const testimonials: Testimonial[] = [
     role: "Invisalign Patient",
     date: "November 2024",
     title: "Invisalign Journey Was Smooth",
-    text: "I was worried about wearing visible braces, so Invisalign was perfect for me. Dr. Nyasha's guidance throughout the treatment was excellent. My teeth are now perfectly straight, and nobody even noticed I was in treatment. This is the best decision I made for my smile!",
+    text: "I was worried about wearing visible braces, so Invisalign was perfect for me. Dr. Butete's guidance throughout the treatment was excellent. My teeth are now perfectly straight, and nobody even noticed I was in treatment. This is the best decision I made for my smile!",
   },
   {
     name: "Joshua Katsande",
@@ -62,7 +62,7 @@ export const testimonials: Testimonial[] = [
     role: "Dental Crown Patient",
     date: "September 2024",
     title: "Dental Crown Looks Perfect",
-    text: "Dr. Farai fitted me with a crown after I cracked a molar. The colour match is flawless — my dentist friends can't even tell which tooth has the crown. The whole process from impression to final crown was smooth and professional. Highly recommend!",
+    text: "Dr. Butete fitted me with a crown after I cracked a molar. The colour match is flawless — my dentist friends can't even tell which tooth has the crown. The whole process from impression to final crown was smooth and professional. Highly recommend!",
   },
   {
     name: "Tafadzwa Gumbo",

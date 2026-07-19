@@ -8,7 +8,7 @@ type MailInput = {
   replyTo?: string;
 };
 
-const TO = process.env.BOOKING_INBOX || site.bookingInbox; // butetemunyaradzi@gmail.com
+const TO = process.env.BOOKING_INBOX || site.bookingInbox; // ahmedcitydental@gmail.com
 
 /**
  * Sends notification emails to the clinic's booking inbox.

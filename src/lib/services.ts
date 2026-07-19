@@ -99,10 +99,10 @@ export const services: Service[] = [
     name: "Dental Implants",
     shortName: "Dental Implants",
     tagline: "Permanent, natural-looking tooth replacement — the gold standard for missing teeth.",
-    metaDescription: "Dental implants in Harare at City Dental from $800. Permanent titanium tooth roots with lifelike crowns, placed by an MSc-qualified implant specialist using 3D imaging.",
+    metaDescription: "Dental implants in Harare at City Dental from $800. Permanent titanium tooth roots with lifelike crowns, placed by an experienced MSc-qualified dentist using 3D imaging.",
     intro: {
       heading: "Permanent Tooth Replacement That Feels Real",
-      body: "Dental implants are permanent titanium tooth roots that support a lifelike crown — the gold standard for replacing missing teeth. Our implant specialist, Dr. Simba Dube (MSc Oral Implantology), uses 3D Cone Beam CT imaging to plan every placement with precision, so your new tooth looks, feels, and functions like a natural one.",
+      body: "Dental implants are permanent titanium tooth roots that support a lifelike crown — the gold standard for replacing missing teeth. Our lead dentist, Dr. Butete M.M, uses 3D Cone Beam CT imaging to plan every placement with precision, so your new tooth looks, feels, and functions like a natural one.",
     },
     benefitsTitle: "Implant Benefits",
     benefits: [
@@ -111,7 +111,7 @@ export const services: Service[] = [
       "Preserves jawbone and facial structure",
       "Eat, speak, and smile with confidence",
       "3D-guided placement for precision",
-      "Placed by an MSc-qualified implant specialist",
+      "Placed by an experienced, MSc-qualified dentist",
     ],
     price: "From $800",
     highlight: { emoji: "🦷", title: "A Tooth for Life", body: "The implant placement takes about 1–2 hours; the full process including healing and crown placement typically takes 3–6 months for the best results.", stat: "3–6 Months", statLabel: "Full treatment journey" },
@@ -168,7 +168,7 @@ export const services: Service[] = [
     name: "Emergency Dentistry",
     shortName: "Emergency Care",
     tagline: "Same-day emergency appointments for toothaches, broken teeth, and urgent dental needs.",
-    metaDescription: "Dental emergency in Harare? City Dental reserves same-day emergency slots every day. Toothache, broken tooth, lost filling or swelling — call or WhatsApp +263 71 433 7786 now.",
+    metaDescription: "Dental emergency in Harare? City Dental reserves same-day emergency slots every day. Toothache, broken tooth, lost filling or swelling — call or WhatsApp +263 78 172 8277 now.",
     intro: {
       heading: "Dental Emergency? We're Here.",
       body: "Toothache, broken tooth, lost filling, knocked-out tooth, or swelling — don't wait in pain. We reserve slots for dental emergencies every single day and aim to see you the same day you contact us. Even on Sundays, we handle true emergencies. Emergency consultations start from just $10.",

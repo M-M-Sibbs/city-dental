@@ -8,7 +8,7 @@ import { site, waLink } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Contact Us – Get in Touch",
   description:
-    "Contact City Dental in Harare, Zimbabwe. Call +263 71 433 7786, WhatsApp us, email hello@citydental.co.zw, or visit us at 123 Samora Machel Avenue. Open Mon–Sat.",
+    "Contact City Dental in Harare, Zimbabwe. Call +263 78 172 8277, WhatsApp us, email ahmedcitydental@gmail.com, or visit us at 21 Robson Manyika. Open Mon–Sat.",
   alternates: { canonical: "/contact" },
 };
 
@@ -122,7 +122,7 @@ export default function ContactPage() {
               Located in the <span className="accent">heart of Harare</span>
             </h2>
             <p className="section-subtitle">
-              Just off Samora Machel Avenue. Easy parking and accessible by all major routes.
+              Centrally located on Robson Manyika. Easy parking and accessible by all major routes.
             </p>
           </div>
           <div className="overflow-hidden rounded-xl3 border border-line shadow-soft">

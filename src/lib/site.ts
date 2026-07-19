@@ -10,7 +10,7 @@ export const site = {
   email: "ahmedcitydental@gmail.com",
   bookingInbox: "ahmedcitydental@gmail.com",
   address: {
-    street: "123 Samora Machel Avenue",
+    street: "21 Robson Manyika",
     city: "Harare",
     country: "Zimbabwe",
     countryCode: "ZW",
@@ -42,22 +42,10 @@ export const site = {
 
 export const team = [
   {
-    name: "Dr. Farai Butete M.M",
+    name: "Dr. Butete M.M",
     role: "Lead Dentist & Director",
     bio: "BDS (UZ), MSc Cosmetic Dentistry (UK). 15 years of experience specialising in full smile makeovers, implants, and complex restorations.",
-    initials: "FM",
-  },
-  {
-    name: "Dr. Nyasha Chirwa",
-    role: "Cosmetic Dentist",
-    bio: "BDS (UNISA), Dip. Aesthetic Dentistry. Expert in Invisalign, porcelain veneers, teeth whitening, and smile design.",
-    initials: "NC",
-  },
-  {
-    name: "Dr. Simba Dube",
-    role: "Implant Specialist",
-    bio: "BDS (UZ), MSc Oral Implantology. Specialist in dental implants, bone grafting, and full-mouth rehabilitation.",
-    initials: "SD",
+    initials: "BM",
   },
 ];
 

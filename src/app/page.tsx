@@ -362,15 +362,15 @@ export default function HomePage() {
       <section className="bg-surface py-20 sm:py-24">
         <div className="container-site">
           <div className="text-center">
-            <p className="tag-label">Our dentists</p>
+            <p className="tag-label">Your dentist</p>
             <h2 className="section-title mt-4">
-              Meet the <span className="accent">expert team</span>
+              Meet your <span className="accent">expert dentist</span>
             </h2>
             <p className="section-subtitle">
-              Our experienced dentists are dedicated to providing exceptional care with the latest techniques.
+              Highly qualified and dedicated to providing exceptional care with the latest techniques.
             </p>
           </div>
-          <div className="mt-12 grid gap-6 md:grid-cols-3">
+          <div className="mx-auto mt-12 grid max-w-sm gap-6">
             {team.map((m, i) => (
               <FadeUp key={m.name} delay={i * 90}>
                 <div className="card h-full p-8 text-center transition hover:-translate-y-1 hover:shadow-card">

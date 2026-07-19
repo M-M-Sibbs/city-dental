@@ -100,7 +100,7 @@ export default function ContactForm() {
             <label htmlFor="phone" className="field-label">
               Phone number
             </label>
-            <input id="phone" name="phone" type="tel" placeholder="+263 71 433 7786" className="input-field" />
+            <input id="phone" name="phone" type="tel" placeholder="+263 78 172 8277" className="input-field" />
           </div>
           <div>
             <label htmlFor="subject" className="field-label">

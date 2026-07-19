@@ -9,7 +9,7 @@ import { site, team, waLink } from "@/lib/site";
 export const metadata: Metadata = {
   title: "About Us – Our Story & Expert Dental Team",
   description:
-    "Founded in 2012, City Dental is one of Harare's most trusted dental clinics. Meet our expert team, mission and values. 5,000+ patients, 12+ years, 98% satisfaction.",
+    "Founded in 2026, City Dental is one of Harare's most trusted dental clinics. Meet your dentist, our mission and values. Thousands of patients and 98% satisfaction.",
   alternates: { canonical: "/about" },
 };
 
@@ -76,7 +76,7 @@ export default function AboutPage() {
             </h2>
             <div className="mt-5 space-y-4 text-slate-600">
               <p>
-                City Dental was founded in 2012 with a simple but powerful mission: to make high-quality dental care
+                City Dental was founded in 2026 with a simple but powerful mission: to make high-quality dental care
                 accessible, comfortable, and genuinely transformative for every patient.
               </p>
               <p>
@@ -142,16 +142,15 @@ export default function AboutPage() {
       <section className="py-20 sm:py-24">
         <div className="container-site">
           <div className="text-center">
-            <p className="tag-label">Meet the team</p>
+            <p className="tag-label">Meet your dentist</p>
             <h2 className="section-title mt-4">
               The experts behind <span className="accent">your smile</span>
             </h2>
             <p className="section-subtitle">
-              Our team of highly qualified dentists bring decades of combined experience and a genuine passion for
-              dental excellence.
+              Highly qualified, with years of experience and a genuine passion for dental excellence.
             </p>
           </div>
-          <div className="mt-12 grid gap-6 md:grid-cols-3">
+          <div className="mx-auto mt-12 grid max-w-sm gap-6">
             {team.map((m, i) => (
               <FadeUp key={m.name} delay={i * 90}>
                 <div className="card h-full p-8 text-center transition hover:-translate-y-1 hover:shadow-card">
